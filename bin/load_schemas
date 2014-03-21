@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require_relative "../application"
+require "adapters/cli_adapter"
+
+schemas_glob = ARGV[0]
+cli_adapter = CliAdapter.new(STDOUT)
+
+
+Application
+  .new(ENV, schemas_glob: schemas_glob)
+  .initialize_persistence(cli_adapter)
