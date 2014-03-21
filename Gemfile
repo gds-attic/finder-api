@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 
 gem 'sinatra'
 gem 'json'
@@ -7,6 +6,7 @@ gem 'unicorn'
 gem 'rake'
 gem 'multi_json', '1.8.4'
 gem 'gds-api-adapters', '8.4.1'
+gem 'faraday', '0.9.0'
 
 group :development do
   gem 'mr-sparkle'
@@ -17,3 +17,5 @@ group :test do
   gem 'cucumber', '1.3.10'
   gem 'rack-test', '0.6.2'
 end
+
+gem 'byebug', group: [:test, :development]
