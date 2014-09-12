@@ -14,6 +14,7 @@ namespace :panopticon do
 
       [
         Registerables::Schema.new(metadata),
+        Registerables::Signup.new(metadata),
       ]
     end
 

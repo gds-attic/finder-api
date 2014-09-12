@@ -30,4 +30,14 @@ module Registerables
       ["/#{slug}", "/#{slug}.json"]
     end
   end
+
+  class Signup < Base
+    def description
+      metadata["signup_body"]
+    end
+
+    def paths
+      ["/#{slug}/signup"]
+    end
+  end
 end
